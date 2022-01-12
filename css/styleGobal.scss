@@ -1,0 +1,102 @@
+.w-5{
+width: 5rem;
+}
+.w-8{
+    width: 8rem;
+}
+.w-10{
+    width: 10rem;
+}
+.h-5{
+    height: 5rem;
+}
+.h-2{
+    height: 2rem;
+}
+.h-4{
+    height: 4rem
+}
+.h-8{
+    height:8rem
+}
+.h-6{
+   height: 6rem !important;
+}
+.h-10{
+    height: 10rem;
+}
+.h-20{
+    height: 20rem !important;
+}
+.min-h-20{
+    min-height: 20rem;
+}
+.m-h-15{
+    max-height: 15rem;
+}
+.m-h-20{
+    max-height:25rem !important;
+}
+.h-15{
+ height:15rem
+}
+.h-17{
+ height:17rem
+}
+.active{
+    border-bottom: blue solid 2px;
+}
+.hr{
+    height:2px !important
+}
+.add{
+    transition: all .5s;
+    transform: translateY(150%);
+}
+.addExame{
+    transition: all .5s;
+    transform: translateY(100%);
+}
+.line-1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+
+}
+.gotoList{
+    animation: ease changeColor 2s forwards ;
+}
+.imagePage{
+
+}
+.item__product{
+
+    &:hover{
+        .add{
+            transform:translateY(0)
+        }
+        .addExame{
+              transform:translateY(-70%)
+        }
+    }
+}
+.hover-img{
+    transition: all .3s;
+    &:hover{
+        transform:scale(1.2)
+    }
+}
+
+
+@keyframes changeColor{
+from{
+    color:#dc3545!important
+}to{
+    color:blue !important
+}
+}
+
+
+

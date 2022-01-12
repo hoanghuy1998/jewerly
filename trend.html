@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRANG SỨC KAT JEWERLY</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styleGobal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="!direction !spacing banner mt-5">
+        <img
+          src="./resoures/imagebook/anh-bia-si-phu-kien-trang-suc-1.jpg"
+          class="h-15 w-100"
+          alt=""
+        />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg navbar-info bg-info text-white mt-4 nav"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Trang Chủ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./introduce.html"
+                  >Giới Thiệu</a
+                >
+              </li>
+
+              <li class="nav-item dropdown active">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tin Tức Thời Trang
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Xu Hướng Thời Trang</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./popular.html">
+                      Mẫu Thời Trang Sức Thịnh Hành
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./beautiful.html"
+                      >Cùng Trang Sức Tỏa Sáng</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="./tutorial.html" class="nav-link"
+                  >Hướng Dẫn Mua Hàng</a
+                >
+              </li>
+            </ul>
+            <a href="./account.html" class="text-capitalize text-success">
+              tài khoản</a
+            >
+          </div>
+        </div>
+      </nav>
+      <main class="row main">
+        <section
+          name="main__sideBar"
+          id="main__sidebar"
+          class="main__sidebar col-md-3 mt-4 rounded"
+        >
+          <div class="list-group align-items-center">
+            <a
+              href="./listProduct.html"
+              name="dataNhanNam"
+              onclick="{showList(this)}"
+              class="list-group-item list-group-item-action list-group-item-info text-dark"
+              >Nhẫn Nam
+              <sup class="badge bg-danger border rounded-circle text-white"
+                >hot</sup
+              ></a
+            >
+            <a
+              href="./listProduct.html"
+              name="dataNhanNu"
+              onclick="{showList(this)}"
+              class="list-group-item list-group-item-action list-group-item-info text-dark"
+              >Nhẫn Nữ
+              <sup class="badge bg-danger border rounded-circle text-white"
+                >hot</sup
+              ></a
+            >
+            <a
+              href="./listProduct.html"
+              onclick="{showList(this)}"
+              name="dataPlai"
+              class="list-group-item showList list-group-item-action list-group-item-info text-dark position-relative"
+              >Trang Sức Lai
+              <sup
+                class="badge bg-success border rounded-pill text-white position-absolute top-0"
+                >Thịnh Hành</sup
+              ></a
+            >
+            <a
+              href="./listProduct.html"
+              href="#"
+              name="dataLacTai"
+              class="list-group-item showList list-group-item-action list-group-item-info text-dark"
+              >Lắc Tay
+            </a>
+            <a
+              href="./listProduct.html"
+              name="dataBongTai"
+              onclick="{showList(this)}"
+              class="list-group-item showList list-group-item-action list-group-item-info text-dark position-relative"
+              >Trang Sức Bông Tai
+              <sup
+                class="badge bg-primary border rounded-pill text-white position-absolute top-0 right-0"
+                >top rate</sup
+              >
+            </a>
+
+            <a
+              href="./listProduct.html"
+              name="dataVang"
+              onclick="{showList(this)}"
+              class="list-group-item showList list-group-item-action list-group-item-info text-dark"
+              >Trang Sức Vàng
+            </a>
+          </div>
+
+          <div
+            class="list-group align-items-center border-1 text-dark mt-5 w-100"
+          >
+            <strong
+              class="text-center fw-bolder text-uppercase list-group-item list-group-item-action list-group-item-primary text-danger"
+              >địa chỉ cửa hàng</strong
+            >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29794.63234932815!2d105.8298035206658!3d21.019516212593107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab96f6bb2c2d%3A0x5923cdfba1ddf552!2zVHJhbmcgc-G7qWMgYuG6oWMgS2FUIEpld2VscnkgSMOgIE7hu5lpIC0gVHLDoG5nIFRoaQ!5e0!3m2!1svi!2s!4v1641969453577!5m2!1svi!2s"
+              class="h-20 w-100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+        <section
+          name="main__home"
+          id="main__home"
+          class="col-md-9 mb-4 main__home"
+        >
+          <h1 class="text-center mt-4 mb-4 text-danger">
+            Ý TƯỞNG TẶNG QUÀ GIÁNG SINH DÀNH CHO NGƯỜI PHỤ NỮ BẠN YÊU
+          </h1>
+          <div class="d-flex">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <span class="mx-1 text-dark">07/01/2022</span>
+            <i class="fa fa-user mx-3 me-1" aria-hidden="true"></i>
+            <span class="text-capitalize text-danger">văn huy</span>
+          </div>
+          <hr />
+          <div class="row">
+            <img
+              src="https://file.hstatic.net/1000112469/file/bia_blog_1200x630-05__1___1__7ea1f000928545ada9713c99bfc25a8f_master.jpg"
+              alt="imageWinter"
+              class="imagePage h-20"
+            />
+          </div>
+          <div class="row pt-4">
+            <p>
+              Giáng Sinh - đối với phương Tây, cũng giống như Tết Nguyên Đán của
+              người phương Đông, là dịp lễ quan trọng nhất trong năm để trở về
+              sum vầy cùng gia đình, cùng nhau quây quần bên sự ấm áp của lò
+              sưởi, quên hẳn đi cái rét âm độ bên ngoài cửa sổ. Thay vì trao
+              nhau những hồng bao may mắn, các gia đình phương Tây sẽ trao tặng
+              nhau những món quà được bọc gói sặc sỡ, cầu chúc nhau một năm mới
+              bình an, thuận buồm xuôi gió.
+            </p>
+            <br />
+            <p>
+              Khi văn hóa đón Giáng Sinh du nhập vào các nước phương Đông, Giáng
+              Sinh cũng theo đó trở thành một dịp để các bạn trẻ xuống phố hẹn
+              hò, tụ tập, thưởng thức không khí mùa lễ hội cuối cùng trong năm.
+              Tuy không náo nhiệt như phương Tây, nhưng Giáng Sinh phương Đông
+              cũng mang màu sắc rất riêng. Ánh đèn lấp lánh, không khí có phần
+              lạnh hơn một chút mang đến một sự lãng mạn nhẹ nhàng, trở thành
+              một cơ hội “tỏ tình” cho không ít các cặp đôi. Dưới đây Huy Thanh
+              sẽ gợi ý một vài món quà thay cho lời nói, gửi đến nửa kia của bạn
+              tâm ý “anh thích em rất nhiều <3”
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">
+      <div class="footer pt-4 pb-4 bg-info">
+        <section>
+          <a href="#"
+            ><img
+              src="data:image/png;base64,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"
+              alt=""
+              class="bg-transparent rounded-4"
+          /></a>
+          <a href="#"
+            ><img
+              src="./resoures/logo/logo-vnp.png"
+              class="mt-3 rounded-3"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="./resoures/logo/logoCCDV.png"
+              class="mt-3 rounded-3"
+              alt=""
+          /></a>
+        </section>
+        <section>
+          <h3>thông tin</h3>
+          <ul>
+            <li><a href="">giới thiệu</a></li>
+            <li><a href="">hướng dẫn</a></li>
+            <li><a href="">quy chế hoạt động</a></li>
+            <li><a href="">cơ chế giải quyết tranh chấp</a></li>
+            <li><a href="">chính sách bảo vệ thông tin</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>liên hệ</h3>
+          <ul>
+            <li>
+              <span class="glyphicon glyphicon-briefcase"></span>
+              <strong>Công ty Cổ phần TRANG SỨC KAT JEWERLY</strong>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-map-marker"></span>
+              <strong
+                >HN: 102 Thái Thịnh Phường Trung Liệt, Quận Đống Đa, Hà
+                Nội</strong
+              >
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-map-marker"></span>
+              <strong
+                >HCM: 260 Nguyễn Tiểu La, Phường 8, Quận 10, Hồ Chí Minh</strong
+              >
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-menu-right"></span>
+              <strong>Số GCNĐKDN: 0102015284, cấp ngày 21/06/2012</strong>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-menu-right"></span>
+              <strong>Nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</strong>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+.w-5 {
+  width: 5rem; }
+
+.w-8 {
+  width: 8rem; }
+
+.w-10 {
+  width: 10rem; }
+
+.h-5 {
+  height: 5rem; }
+
+.h-2 {
+  height: 2rem; }
+
+.h-4 {
+  height: 4rem; }
+
+.h-8 {
+  height: 8rem; }
+
+.h-6 {
+  height: 6rem !important; }
+
+.h-10 {
+  height: 10rem; }
+
+.h-20 {
+  height: 20rem !important; }
+
+.min-h-20 {
+  min-height: 20rem; }
+
+.m-h-15 {
+  max-height: 15rem; }
+
+.m-h-20 {
+  max-height: 25rem !important; }
+
+.h-15 {
+  height: 15rem; }
+
+.h-17 {
+  height: 17rem; }
+
+.active {
+  border-bottom: blue solid 2px; }
+
+.hr {
+  height: 2px !important; }
+
+.add {
+  transition: all .5s;
+  transform: translateY(150%); }
+
+.addExame {
+  transition: all .5s;
+  transform: translateY(100%); }
+
+.line-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box; }
+
+.gotoList {
+  animation: ease changeColor 2s forwards; }
+
+.item__product:hover .add {
+  transform: translateY(0); }
+.item__product:hover .addExame {
+  transform: translateY(-70%); }
+
+.hover-img {
+  transition: all .3s; }
+  .hover-img:hover {
+    transform: scale(1.2); }
+footer .footer {
+  display: grid;
+  grid-template-columns: .8fr .8fr 1fr;
+  background-color: white; }
+  footer .footer section h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: default; }
+  footer .footer section:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px); }
+    footer .footer section:first-child a:first-child {
+      grid-column: 1/3; }
+      footer .footer section:first-child a:first-child img {
+        width: 60%;
+        margin: 0px 10%;
+        height: 100px; }
+    footer .footer section:first-child a:nth-child(2) {
+      grid-column: 1/2; }
+      footer .footer section:first-child a:nth-child(2) img {
+        width: 80%;
+        margin: 0px auto;
+        height: 60px; }
+    footer .footer section:first-child a:last-child {
+      grid-column: 2/3; }
+      footer .footer section:first-child a:last-child img {
+        width: 60%;
+        margin: 0px auto;
+        height: 50px; }
+  footer .footer section ul li {
+    list-style: none;
+    height: 32px;
+    line-height: 32px; }
+    footer .footer section ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: capitalize; }
+      footer .footer section ul li a:hover {
+        text-decoration: underline; }
+  footer .footer section:last-child ul li {
+    height: auto;
+    line-height: 24px; }
+@keyframes changeColor {
+  from {
+    color: #dc3545 !important; }
+  to {
+    color: blue !important; } }
